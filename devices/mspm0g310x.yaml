@@ -1,0 +1,7 @@
+_svd: ../svd/mspm0g310x.svd
+
+_modify:
+  name: MSPM0G310X
+
+_include:
+  - ../devices/common_patches/wwdt.yaml

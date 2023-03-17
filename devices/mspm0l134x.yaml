@@ -1,0 +1,7 @@
+_svd: ../svd/mspm0l134x.svd
+
+_modify:
+  name: MSPM0L134X
+
+_include:
+  - ../devices/common_patches/wwdt.yaml

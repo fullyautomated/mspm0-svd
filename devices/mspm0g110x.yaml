@@ -1,0 +1,7 @@
+_svd: ../svd/mspm0g110x.svd
+
+_modify:
+  name: MSPM0G110X
+
+_include:
+  - ../devices/common_patches/wwdt.yaml

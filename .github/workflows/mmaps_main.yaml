@@ -1,0 +1,49 @@
+name: build mmaps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build mmaps
+    runs-on: ubuntu-latest
+
+    env:
+      SVDTOOLS: svd
+
+    steps:
+      - name: Checkout mspm0-svd
+        uses: actions/checkout@v3
+        with:
+          path: mspm0-svd
+
+      - name: Checkout mmaps
+        uses: actions/checkout@v3
+        with:
+          repository: fullyautomated/mspm0-svd-mmaps
+          ssh-key: ${{ secrets.MMAPS_KEY }}
+          path: mspm0-svd-mmaps
+
+      - name: Add fictive crate
+        run: |
+          cargo init
+
+      - name: Install tools
+        run: |
+          ./mspm0-svd/scripts/tool_install.sh svdtools
+          pip install --user svdtools
+
+      - name: Build and publish
+        run: |
+          cd mspm0-svd
+          COMMIT=$(git rev-parse HEAD)
+          make -j2 mmaps
+          mv mmaps/* ../mspm0-svd-mmaps/
+          cd ../mspm0-svd-mmaps
+          git config user.name "mspm0-svd builder"
+          git config user.email "action@github.com"
+          git add .
+          git commit --allow-empty -m "mspm0-svd main $COMMIT"
+          git push origin main

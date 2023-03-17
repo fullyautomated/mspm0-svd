@@ -1,0 +1,7 @@
+_svd: ../svd/mspm0g150x.svd
+
+_modify:
+  name: MSPM0G150X
+
+_include:
+  - ../devices/common_patches/wwdt.yaml

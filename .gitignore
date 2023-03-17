@@ -1,0 +1,11 @@
+**/__pycache__/
+**/target/
+**/*.rs.bk
+**/Cargo.lock
+.deps/
+*/src/stm32*/
+*/src/generic.rs
+html/
+mmaps/
+/venv
+.devcontainer

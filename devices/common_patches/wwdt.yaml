@@ -1,0 +1,22 @@
+
+WWDT[01]:
+  _modify:
+    WWDTCTL0:
+      access: read-writeOnce
+
+  WWDTCTL0:
+    _modify:
+      WWDTCTL0_PER:
+        access: read-writeOnce
+      WWDTCTL0_WINDOW0:
+        access: read-writeOnce
+      WWDTCTL0_MODE:
+        access: read-writeOnce
+      WWDTCTL0_STISM:
+        access: read-writeOnce
+      WWDTCTL0_KEY:
+        access: read-writeOnce
+      WWDTCTL0_CLKDIV:
+        access: read-writeOnce
+      WWDTCTL0_WINDOW1:
+        access: read-writeOnce
