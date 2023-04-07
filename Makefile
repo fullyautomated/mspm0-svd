@@ -25,6 +25,7 @@ MMAPS := $(patsubst devices/%.yaml, mmaps/%.mmap, $(YAMLS))
 # Turn a devices/device.yaml and svd/device.svd into svd/device.svd.patched
 svd/%.svd.patched: devices/%.yaml svd/%.svd .deps/%.d
 	$(SVDTOOLS) patch $<
+	scripts/ti_patch_dimarrayindex.py $@
 
 svd/%.svd.formatted: svd/%.svd.patched
 	xmllint $< --format -o $@
