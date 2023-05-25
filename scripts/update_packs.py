@@ -5,7 +5,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-packs = {"MSPM0G_DFP": "1.0.0", "MSPM0L_DFP": "1.0.0"}
+packs = {"MSPM0G_DFP": "1.1.0", "MSPM0L_DFP": "1.1.0"}
 
 
 def process_pack(e: ET.Element):
