@@ -9,7 +9,7 @@ SHELL := /usr/bin/env bash
 SVDTOOLS ?= svd
 
 
-CRATES ?= mspm0l110x mspm0l130x mspm0l134x mspm0g110x mspm0g150x mspm0g310x mspm0g350x
+CRATES ?= mspm0l110x mspm0l130x mspm0l134x mspm0g110x mspm0g150x mspm0g310x mspm0g350x mspm0c110x msps003fx
 
 # All yaml files in devices/ will be used to patch an SVD
 YAMLS := $(foreach crate, $(CRATES), \

@@ -1,18 +1,30 @@
 #!/usr/bin/env python3
 import io
 import os
+from urllib.error import HTTPError
 import urllib.request
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-packs = {"MSPM0G_DFP": "1.1.0", "MSPM0L_DFP": "1.1.0"}
+packs = {
+    "MSPM0G1X0X_G3X0X_DFP": "1.2.1",
+    "MSPM0L11XX_L13XX_DFP": "1.2.1",
+    "MSPM0C110X_DFP": "1.0.1",
+    "MSPS003FX_DFP": "1.0.1"
+}
 
 
 def process_pack(e: ET.Element):
     url = f"{e.attrib['url']}{e.attrib['vendor']}.{e.attrib['name']}.{e.attrib['version']}.pack"
 
-    with urllib.request.urlopen(url) as f:
-        buf = f.read()
+    print(f"pack url: {url}")
+
+    try:
+        with urllib.request.urlopen(url) as f:
+            buf = f.read()
+    except HTTPError as e:
+        print(f"could not download pack: {e}")
+        return
 
     f = io.BytesIO(buf)
     ar = ZipFile(f)

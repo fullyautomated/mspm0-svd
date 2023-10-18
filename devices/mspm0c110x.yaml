@@ -1,0 +1,8 @@
+_svd: ../svd/mspm0c110x.svd
+
+_modify:
+  name: MSPM0C110X
+
+_include:
+  - ../devices/common_patches/wwdt.yaml
+  - ../devices/common_patches/vendor_id.yaml
