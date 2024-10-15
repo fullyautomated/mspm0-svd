@@ -4,5 +4,4 @@ _modify:
   name: MSPS003FX
 
 _include:
-  - ../devices/common_patches/wwdt.yaml
   - ../devices/common_patches/vendor_id.yaml
