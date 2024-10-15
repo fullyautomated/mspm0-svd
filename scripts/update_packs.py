@@ -7,10 +7,10 @@ import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
 packs = {
-    "MSPM0G1X0X_G3X0X_DFP": "1.2.1",
-    "MSPM0L11XX_L13XX_DFP": "1.2.1",
-    "MSPM0C110X_DFP": "1.0.1",
-    "MSPS003FX_DFP": "1.0.1"
+    "MSPM0G1X0X_G3X0X_DFP": "1.3.1",
+    "MSPM0L11XX_L13XX_DFP": "1.3.1",
+    "MSPM0C110X_DFP": "1.1.1",
+    "MSPS003FX_DFP": "1.1.1"
 }
 
 
