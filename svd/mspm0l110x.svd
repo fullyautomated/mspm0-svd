@@ -3475,7 +3475,8 @@ Note:
                     <fields>
                         <field>
                             <name>AGFSEL</name>
-                            <description>Analog Glitch Suppression Pulse Width
+                            <description>Analog Glitch Suppression Pulse Width
+
 This field controls the pulse width select for the analog glitch suppression on the RX line.
 See device datasheet for exact values.
 (ULP UART only)</description>
@@ -3526,8 +3527,10 @@ See device datasheet for exact values.
                             </field>
                         <field>
                             <name>DGFSEL</name>
-                            <description>Glitch Suppression Pulse Width 
-This field controls the pulse width select for glitch suppression on the RX line. The following values are the glitch suppression values in terms of functional clocks.  
+                            <description>Glitch Suppression Pulse Width
+ 
+This field controls the pulse width select for glitch suppression on the RX line. The following values are the glitch suppression values in terms of functional clocks.
+  
 In IRDA mode:
 Receive filter length. The minimum pulse length for receive is given by:
 t(MIN) = (DGFSEL) / f(IRTXCLK)</description>
@@ -12743,7 +12746,8 @@ Trigger when Transmit FIFO contains &lt;= defined bytes</description>
                     <fields>
                         <field>
                             <name>AGFSEL</name>
-                            <description>Analog Glitch Suppression Pulse Width
+                            <description>Analog Glitch Suppression Pulse Width
+
 This field controls the pulse width select for the analog glitch suppression on SCL and SDA lines. 
 See device datasheet for exact values.
 (ULP I2C only)</description>
@@ -12775,8 +12779,10 @@ See device datasheet for exact values.
                             </field>
                         <field>
                             <name>DGFSEL</name>
-                            <description>Glitch Suppression Pulse Width 
-This field controls the pulse width select for glitch suppression on the SCL and SDA lines. The following values are the glitch suppression values in terms of functional clocks.  
+                            <description>Glitch Suppression Pulse Width
+ 
+This field controls the pulse width select for glitch suppression on the SCL and SDA lines. The following values are the glitch suppression values in terms of functional clocks.
+  
 (Core Domain only)</description>
                             <bitOffset>0x0</bitOffset>
                             <bitWidth>0x3</bitWidth>
@@ -13031,7 +13037,9 @@ When 1, 10-bit addressing is used.</description>
                         <fields>
                             <field>
                                 <name>BURSTRUN</name>
-                                <description>I2C Controller Enable and start transaction</description>
+                                <description>I2C Controller Enable
+ 
+and start transaction</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x1</bitWidth>
                                 <access>read-write</access>
@@ -13161,7 +13169,8 @@ This field contains the programmed length of bytes of the Transaction.</descript
                         <fields>
                             <field>
                                 <name>BUSY</name>
-                                <description>I2C Controller FSM Busy
+                                <description>I2C Controller FSM Busy
+
 The BUSY bit is set during an ongoing transaction, so is set during the transmit/receive of the amount of data set in MBLEN including START, RESTART, Address and STOP signal generation when required for the current transaction.</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x1</bitWidth>
@@ -13181,7 +13190,8 @@ The BUSY bit is set during an ongoing transaction, so is set during the transmit
                                 </field>
                             <field>
                                 <name>ERR</name>
-                                <description>Error 
+                                <description>Error
+ 
 The error can be from the Target address not being acknowledged or the transmit data not being acknowledged.</description>
                                 <bitOffset>0x1</bitOffset>
                                 <bitWidth>0x1</bitWidth>
@@ -13317,7 +13327,8 @@ This field contains the current count-down value of the transaction.</descriptio
                             <field>
                                 <name>VALUE</name>
                                 <description>Received Data. 
-This field contains the last received data.</description>
+
+This field contains the last received data.</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x8</bitWidth>
                                 <access>read-only</access>
@@ -13355,13 +13366,20 @@ This byte contains the data to be transferred during the next transaction.</desc
                             <field>
                                 <name>TPR</name>
                                 <description>Timer Period 
-This field is used in the equation to configure SCL_PERIOD :
+
+This field is used in the equation to configure SCL_PERIOD :
+
 SCL_PERIOD = (1 + TPR ) * (SCL_LP + SCL_HP ) * INT_CLK_PRD
-where: 
+where:
+ 
   SCL_PRD is the SCL line period (I2C clock).
-  TPR is the Timer Period register value (range of 1 to 127).
+  
+TPR is the Timer Period register value (range of 1 to 127).
+
   SCL_LP is the SCL Low period (fixed at 6).
-  SCL_HP is the SCL High period (fixed at 4).
+  
+SCL_HP is the SCL High period (fixed at 4).
+
   CLK_PRD is the functional clock period in ns.</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x7</bitWidth>
@@ -13891,7 +13909,8 @@ When 1, 10-bit addressing is used.</description>
                         <fields>
                             <field>
                                 <name>OAR2</name>
-                                <description>I2C Target Own Address 2This field specifies the alternate OAR2 address.</description>
+                                <description>I2C Target Own Address 2
+This field specifies the alternate OAR2 address.</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x7</bitWidth>
                                 <access>read-write</access>
@@ -14188,7 +14207,8 @@ This prevents stale bytes left in the TX FIFO from automatically being sent on t
                                 </field>
                             <field>
                                 <name>OAR2SEL</name>
-                                <description>OAR2 Address Matched This bit gets reevaluated after every address comparison.</description>
+                                <description>OAR2 Address Matched
+ This bit gets reevaluated after every address comparison.</description>
                                 <bitOffset>0x3</bitOffset>
                                 <bitWidth>0x1</bitWidth>
                                 <access>read-only</access>
@@ -14342,7 +14362,8 @@ Value Description:
                             <field>
                                 <name>VALUE</name>
                                 <description>Received Data. 
-This field contains the last received data.</description>
+
+This field contains the last received data.</description>
                                 <bitOffset>0x0</bitOffset>
                                 <bitWidth>0x8</bitWidth>
                                 <access>read-only</access>
@@ -14398,7 +14419,8 @@ This byte contains the data to be transferred during the next transaction.</desc
                                 </field>
                             <field>
                                 <name>ACKOVAL</name>
-                                <description>I2C Target ACK Override Value
+                                <description>I2C Target ACK Override Value
+
 Note: for General Call this bit will be ignored if set to NACK and Target continues to receive data.</description>
                                 <bitOffset>0x1</bitOffset>
                                 <bitWidth>0x1</bitWidth>
@@ -34721,7 +34743,8 @@ Note:
                     <fields>
                         <field>
                             <name>AGFSEL</name>
-                            <description>Analog Glitch Suppression Pulse Width
+                            <description>Analog Glitch Suppression Pulse Width
+
 This field controls the pulse width select for the analog glitch suppression on the RX line.
 See device datasheet for exact values.
 (ULP UART only)</description>
@@ -35350,7 +35373,7 @@ Note: For safety devices a watchdog reset by software is not possible.</descript
                     <description>Window Watchdog Timer Control Register 0</description>
                     <addressOffset>0x1100</addressOffset>
                     <size>32</size>
-                    <access>read-writeonce</access>
+                    <access>read-writeOnce</access>
                     <resetValue>0x00000043</resetValue>
                     <resetMask>0xffffffff</resetMask>
                     <fields>
@@ -35359,7 +35382,7 @@ Note: For safety devices a watchdog reset by software is not possible.</descript
                             <description>Timer Period of the WWDT. These bits select the total watchdog timer count.</description>
                             <bitOffset>0x4</bitOffset>
                             <bitWidth>0x3</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             <enumeratedValues>
                                     <enumeratedValue>
                                         <name>EN_25</name>
@@ -35408,7 +35431,7 @@ Note: For safety devices a watchdog reset by software is not possible.</descript
                             <description>Closed window period in percentage of the timer interval. WWDTCTL1.WINSEL determines the active window setting (WWDTCTL0.WINDOW0 or WWDTCTL0.WINDOW1).</description>
                             <bitOffset>0x8</bitOffset>
                             <bitWidth>0x3</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             <enumeratedValues>
                                     <enumeratedValue>
                                         <name>SIZE_0</name>
@@ -35457,7 +35480,7 @@ Note: For safety devices a watchdog reset by software is not possible.</descript
                             <description>Window Watchdog Timer Mode</description>
                             <bitOffset>0x10</bitOffset>
                             <bitWidth>0x1</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             <enumeratedValues>
                                     <enumeratedValue>
                                         <name>WINDOW</name>
@@ -35478,7 +35501,7 @@ The functionality of this bit requires that POLICY.HWCEN = 0. If POLICY.HWCEN = 
 Note: This bit has no effect for the global Window Watchdog as Sleep Mode is not supported.</description>
                             <bitOffset>0x11</bitOffset>
                             <bitWidth>0x1</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             <enumeratedValues>
                                     <enumeratedValue>
                                         <name>CONT</name>
@@ -35499,14 +35522,14 @@ Divider values from /1 to /8 are possible.
 The clock divider is currently 4 bits. Bit 4 has no effect and should always be written with 0.</description>
                             <bitOffset>0x0</bitOffset>
                             <bitWidth>0x3</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             </field>
                         <field>
                             <name>WINDOW1</name>
                             <description>Closed window period in percentage of the timer interval. WWDTCTL1.WINSEL determines the active window setting (WWDTCTL0.WINDOW0 or WWDTCTL0.WINDOW1).</description>
                             <bitOffset>0xC</bitOffset>
                             <bitWidth>0x3</bitWidth>
-                            <access>read-writeonce</access>
+                            <access>read-writeOnce</access>
                             <enumeratedValues>
                                     <enumeratedValue>
                                         <name>SIZE_0</name>
@@ -65017,4 +65040,3 @@ This selects whether a trigger is enabled or not for this counter
 
    </peripherals>
 </device>
-
