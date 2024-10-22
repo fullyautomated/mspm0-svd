@@ -20,4 +20,17 @@ for reg in root.findall(".//register"):
         if e is not None:
             reg.remove(e)
 
+for reg in root.findall(".//cluster"):
+    if reg.find("dim") is not None:
+        e = reg.find("dimArrayIndex")
+        if e is not None:
+            reg.remove(e)
+
+parents = {c: p for p in root.iter() for c in p}
+
+for reg in root.findall(".//registers"):
+    if len(reg) == 0:
+        parent = parents[reg]
+        parent.remove(reg)
+
 tree.write(sys.argv[1])

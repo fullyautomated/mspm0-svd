@@ -1,0 +1,13 @@
+COMP1:
+  _modify:
+    "COMP1_GPRCM\\[%s\\]":
+      description: "COMP1 GPRCM"
+    "COMP1_INT_EVENT\\[%s\\]":
+      description: "COMP1 INT EVENT"
+
+COMP2:
+  _modify:
+    "COMP2_GPRCM\\[%s\\]":
+      description: "COMP2 GPRCM"
+    "COMP2_INT_EVENT\\[%s\\]":
+      description: "COMP2 INT EVENT"

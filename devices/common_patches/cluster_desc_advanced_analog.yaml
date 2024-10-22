@@ -1,0 +1,31 @@
+OPA0:
+  _modify:
+    "OPA0_GPRCM\\[%s\\]":
+      description: "OPA0 GPRCM"
+
+OPA1:
+  _modify:
+    "OPA1_GPRCM\\[%s\\]":
+      description: "OPA1 GPRCM"
+
+COMP0:
+  _modify:
+    "COMP0_GPRCM\\[%s\\]":
+      description: "COMP0 GPRCM"
+    "COMP0_INT_EVENT\\[%s\\]":
+      description: "COMP0 INT EVENT"
+
+I2C1:
+  _modify:
+    "I2C1_GPRCM\\[%s\\]":
+      description: "I2C1 GPRCM"
+    "I2C1_CPU_INT\\[%s\\]":
+      description: "I2C1 INT EVENT0"
+    "I2C1_DMA_TRIG0\\[%s\\]":
+      description: "I2C1 DMA TRIG0"
+    "I2C1_DMA_TRIG1\\[%s\\]":
+      description: "I2C1 DMA TRIG1"
+    "I2C1_CONTROLLER\\[%s\\]":
+      description: "I2C1 CONTROLLER"
+    "I2C1_TARGET\\[%s\\]":
+      description: "I2C1 TARGET"

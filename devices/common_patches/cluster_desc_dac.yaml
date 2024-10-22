@@ -1,0 +1,6 @@
+DAC0:
+  _modify:
+    "DAC0_GPRCM\\[%s\\]":
+      description: "DAC0 GPRCM"
+    "DAC0_INT_EVENT\\[%s\\]":
+      description: "DAC0 INT EVENT"

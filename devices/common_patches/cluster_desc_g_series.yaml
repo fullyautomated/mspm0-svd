@@ -1,0 +1,151 @@
+WWDT1:
+  _modify:
+    "WWDT1_GPRCM\\[%s\\]":
+      description: "WWDT1 GPRCM"
+    "WWDT1_INT_EVENT\\[%s\\]":
+      description: "WWDT1 INT EVENT"
+
+GPIOB:
+  _modify:
+    "GPIOB_GPRCM\\[%s\\]":
+      description: "GPIOB GPRCM"
+    "GPIOB_INT_EVENT0\\[%s\\]":
+      description: "GPIOB INT EVENT0"
+    "GPIOB_INT_EVENT1\\[%s\\]":
+      description: "GPIOB INT EVENT1"
+    "GPIOB_INT_EVENT2\\[%s\\]":
+      description: "GPIOB INT EVENT2"
+
+SPI1:
+  _modify:
+    "SPI1_GPRCM\\[%s\\]":
+      description: "SPI1 GPRCM"
+    "SPI1_INT_EVENT0\\[%s\\]":
+      description: "SPI1 INT EVENT0"
+    "SPI1_INT_EVENT1\\[%s\\]":
+      description: "SPI1 INT EVENT1"
+    "SPI1_INT_EVENT2\\[%s\\]":
+      description: "SPI1 INT EVENT2"
+
+I2C1:
+  _modify:
+    "I2C1_GPRCM\\[%s\\]":
+      description: "I2C1 GPRCM"
+    "I2C1_CPU_INT\\[%s\\]":
+      description: "I2C1 INT EVENT0"
+    "I2C1_DMA_TRIG0\\[%s\\]":
+      description: "I2C1 DMA TRIG0"
+    "I2C1_DMA_TRIG1\\[%s\\]":
+      description: "I2C1 DMA TRIG1"
+    "I2C1_CONTROLLER\\[%s\\]":
+      description: "I2C1 CONTROLLER"
+    "I2C1_TARGET\\[%s\\]":
+      description: "I2C1 TARGET"
+
+RTC:
+  _modify:
+    "RTC_GPRCM\\[%s\\]":
+      description: "RTC GPRCM"
+    "RTC_INT_EVENT0\\[%s\\]":
+      description: "RTC INT EVENT0"
+    "RTC_INT_EVENT1\\[%s\\]":
+      description: "RTC INT EVENT1"
+
+TIMA0:
+  _modify:
+    "TIMA0_GPRCM\\[%s\\]":
+      description: "TIMA0 GPRCM"
+    "TIMA0_INT_EVENT\\[%s\\]":
+      description: "TIMA0 INT EVENT"
+    "TIMA0_COMMONREGS\\[%s\\]":
+      description: "TIMA0 COMMONREGS"
+    "TIMA0_COUNTERREGS\\[%s\\]":
+      description: "TIMA0 COUNTERREGS"
+
+TIMA1:
+  _modify:
+    "TIMA1_GPRCM\\[%s\\]":
+      description: "TIMA1 GPRCM"
+    "TIMA1_INT_EVENT\\[%s\\]":
+      description: "TIMA1 INT EVENT"
+    "TIMA1_COMMONREGS\\[%s\\]":
+      description: "TIMA1 COMMONREGS"
+    "TIMA1_COUNTERREGS\\[%s\\]":
+      description: "TIMA1 COUNTERREGS"
+
+TIMG6:
+  _modify:
+    "TIMG6_GPRCM\\[%s\\]":
+      description: "TIMG6 GPRCM"
+    "TIMG6_INT_EVENT\\[%s\\]":
+      description: "TIMG6 INT EVENT"
+    "TIMG6_COMMONREGS\\[%s\\]":
+      description: "TIMG6 COMMONREGS"
+    "TIMG6_COUNTERREGS\\[%s\\]":
+      description: "TIMG6 COUNTERREGS"
+
+TIMG7:
+  _modify:
+    "TIMG7_GPRCM\\[%s\\]":
+      description: "TIMG7 GPRCM"
+    "TIMG7_INT_EVENT\\[%s\\]":
+      description: "TIMG7 INT EVENT"
+    "TIMG7_COMMONREGS\\[%s\\]":
+      description: "TIMG7 COMMONREGS"
+    "TIMG7_COUNTERREGS\\[%s\\]":
+      description: "TIMG7 COUNTERREGS"
+
+TIMG8:
+  _modify:
+    "TIMG8_GPRCM\\[%s\\]":
+      description: "TIMG8 GPRCM"
+    "TIMG8_INT_EVENT\\[%s\\]":
+      description: "TIMG8 INT EVENT"
+    "TIMG8_COMMONREGS\\[%s\\]":
+      description: "TIMG8 COMMONREGS"
+    "TIMG8_COUNTERREGS\\[%s\\]":
+      description: "TIMG8 COUNTERREGS"
+
+TIMG12:
+  _modify:
+    "TIMG12_GPRCM\\[%s\\]":
+      description: "TIMG12 GPRCM"
+    "TIMG12_INT_EVENT\\[%s\\]":
+      description: "TIMG12 INT EVENT"
+    "TIMG12_COMMONREGS\\[%s\\]":
+      description: "TIMG12 COMMONREGS"
+    "TIMG12_COUNTERREGS\\[%s\\]":
+      description: "TIMG12 COUNTERREGS"
+
+UART2:
+  _modify:
+    "UART2_GPRCM\\[%s\\]":
+      description: "UART2 GPRCM"
+    "UART2_INT_EVENT0\\[%s\\]":
+      description: "UART2 INT EVENT0"
+    "UART2_INT_EVENT1\\[%s\\]":
+      description: "UART2 INT EVENT1"
+    "UART2_INT_EVENT2\\[%s\\]":
+      description: "UART2 INT EVENT2"
+
+UART3:
+  _modify:
+    "UART3_GPRCM\\[%s\\]":
+      description: "UART3 GPRCM"
+    "UART3_INT_EVENT0\\[%s\\]":
+      description: "UART3 INT EVENT0"
+    "UART3_INT_EVENT1\\[%s\\]":
+      description: "UART3 INT EVENT1"
+    "UART3_INT_EVENT2\\[%s\\]":
+      description: "UART3 INT EVENT2"
+
+ADC1:
+  _modify:
+    "ADC1_GPRCM\\[%s\\]":
+      description: "ADC1 GPRCM"
+    "ADC1_INT_EVENT0\\[%s\\]":
+      description: "ADC1 INT EVENT0"
+    "ADC1_INT_EVENT1\\[%s\\]":
+      description: "ADC1 INT EVENT1"
+    "ADC1_INT_EVENT2\\[%s\\]":
+      description: "ADC1 INT EVENT2"

@@ -1,0 +1,142 @@
+UART0:
+  _modify:
+    "UART0_GPRCM\\[%s\\]":
+      description: "UART0 GPRCM"
+    "UART0_INT_EVENT0\\[%s\\]":
+      description: "UART0 INT EVENT0"
+    "UART0_INT_EVENT1\\[%s\\]":
+      description: "UART0 INT EVENT1"
+    "UART0_INT_EVENT2\\[%s\\]":
+      description: "UART0 INT EVENT2"
+
+UART1:
+  _modify:
+    "UART1_GPRCM\\[%s\\]":
+      description: "UART1 GPRCM"
+    "UART1_INT_EVENT0\\[%s\\]":
+      description: "UART1 INT EVENT0"
+    "UART1_INT_EVENT1\\[%s\\]":
+      description: "UART1 INT EVENT1"
+    "UART1_INT_EVENT2\\[%s\\]":
+      description: "UART1 INT EVENT2"
+
+SPI0:
+  _modify:
+    "SPI0_GPRCM\\[%s\\]":
+      description: "SPI0 GPRCM"
+    "SPI0_INT_EVENT0\\[%s\\]":
+      description: "SPI0 INT EVENT0"
+    "SPI0_INT_EVENT1\\[%s\\]":
+      description: "SPI0 INT EVENT1"
+    "SPI0_INT_EVENT2\\[%s\\]":
+      description: "SPI0 INT EVENT2"
+
+I2C0:
+  _modify:
+    "I2C0_GPRCM\\[%s\\]":
+      description: "I2C0 GPRCM"
+    "I2C0_CPU_INT\\[%s\\]":
+      description: "I2C0 INT EVENT0"
+    "I2C0_DMA_TRIG0\\[%s\\]":
+      description: "I2C0 DMA TRIG0"
+    "I2C0_DMA_TRIG1\\[%s\\]":
+      description: "I2C0 DMA TRIG1"
+    "I2C0_CONTROLLER\\[%s\\]":
+      description: "I2C0 CONTROLLER"
+    "I2C0_TARGET\\[%s\\]":
+      description: "I2C0 TARGET"
+
+CPUSS:
+  _modify:
+    "CPUSS_INT_GROUP0\\[%s\\]":
+      description: "CPUSS INT GROUP0"
+    "CPUSS_INT_GROUP1\\[%s\\]":
+      description: "CPUSS INT GROUP1"
+
+GPIOA:
+  _modify:
+    "GPIOA_GPRCM\\[%s\\]":
+      description: "GPIOA GPRCM"
+    "GPIOA_INT_EVENT0\\[%s\\]":
+      description: "GPIOA INT EVENT0"
+    "GPIOA_INT_EVENT1\\[%s\\]":
+      description: "GPIOA INT EVENT1"
+    "GPIOA_INT_EVENT2\\[%s\\]":
+      description: "GPIOA INT EVENT2"
+
+WWDT0:
+  _modify:
+    "WWDT0_GPRCM\\[%s\\]":
+      description: "WWDT0 GPRCM"
+    "WWDT0_INT_EVENT\\[%s\\]":
+      description: "WWDT0 INT EVENT"
+
+VREF:
+  _modify:
+    "VREF_GPRCM\\[%s\\]":
+      description: "VREF GPRCM"
+
+EVENTLP:
+  _modify:
+    "EVENTLP_PUBCFG_FSUB\\[%s\\]":
+      description: "EVENTLP PUBCFG FSUB"
+    "EVENTLP_PUBCFG_FPUB\\[%s\\]":
+      description: "EVENTLP PUBCFG FPUB"
+    "EVENTLP_PUBCFG_EXPORT\\[%s\\]":
+      description: "EVENTLP PUBCFG EXPORT"
+    "EVENTLP_PUBCFG_IMPORT\\[%s\\]":
+      description: "EVENTLP PUBCFG IMPORT"
+    "EVENTLP_PUBCFG_CPU_CONNECT\\[%s\\]":
+      description: "EVENTLP PUBCFG CPU CONNECT"
+    "EVENTLP_SECCFG_FSUB\\[%s\\]":
+      description: "EVENTLP SECCFG FSUB"
+    "EVENTLP_SECCFG_FPUB\\[%s\\]":
+      description: "EVENTLP SECCFG FPUB"
+    "EVENTLP_SECCFG_EXPORT\\[%s\\]":
+      description: "EVENTLP SECCFG EXPORT"
+    "EVENTLP_SECCFG_IMPORT\\[%s\\]":
+      description: "EVENTLP SECCFG IMPORT"
+    "EVENTLP_SECCFG_CPU_CONNECT\\[%s\\]":
+      description: "EVENTLP SECCFG CPU CONNECT"
+    "EVENTLP_LMGMT_SFTYDIAG\\[%s\\]":
+      description: "EVENTLP LMGMT SFTYDIAG"
+    "EVENTLP_IMPEXPCFG_EXPORT\\[%s\\]":
+      description: "EVENTLP IMPEXPCFG EXPORT"
+    "EVENTLP_IMPEXPCFG_IMPORT\\[%s\\]":
+      description: "EVENTLP IMPEXPCFG IMPORT"
+
+CRC:
+  _modify:
+    "CRC_GPRCM\\[%s\\]":
+      description: "CRC GPRCM"
+
+TIMG0:
+  _modify:
+    "TIMG0_GPRCM\\[%s\\]":
+      description: "TIMG0 GPRCM"
+    "TIMG0_INT_EVENT\\[%s\\]":
+      description: "TIMG0 INT EVENT"
+    "TIMG0_COMMONREGS\\[%s\\]":
+      description: "TIMG0 COMMONREGS"
+    "TIMG0_COUNTERREGS\\[%s\\]":
+      description: "TIMG0 COUNTERREGS"
+
+DMA:
+  _modify:
+    "DMA_INT_EVENT\\[%s\\]":
+      description: "DMA INT EVENT"
+    "DMA_DMATRIG\\[%s\\]":
+      description: "DMA DMATRIG"
+    "DMA_DMACHAN\\[%s\\]":
+      description: "DMA DMACHAN"
+
+ADC0:
+  _modify:
+    "ADC0_GPRCM\\[%s\\]":
+      description: "ADC0 GPRCM"
+    "ADC0_INT_EVENT0\\[%s\\]":
+      description: "ADC0 INT EVENT0"
+    "ADC0_INT_EVENT1\\[%s\\]":
+      description: "ADC0 INT EVENT1"
+    "ADC0_INT_EVENT2\\[%s\\]":
+      description: "ADC0 INT EVENT2"

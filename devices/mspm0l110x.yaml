@@ -5,3 +5,9 @@ _modify:
 
 _include:
   - ../devices/common_patches/vendor_id.yaml
+  - ../devices/common_patches/periph_clusters.yaml
+  - ../devices/common_patches/periph_clusters_more.yaml
+
+FLASH:
+  _delete:
+    _registers: "*"

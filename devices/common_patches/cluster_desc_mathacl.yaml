@@ -1,0 +1,4 @@
+MATHACL:
+  _modify:
+    "MATHACL_GPRCM\\[%s\\]":
+      description: "MATHACL GPRCM"

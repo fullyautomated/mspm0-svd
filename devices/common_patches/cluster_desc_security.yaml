@@ -1,0 +1,17 @@
+TRNG:
+  _modify:
+    "TRNG_GPRCM\\[%s\\]":
+      description: "TRNG GPRCM"
+
+AES:
+  _modify:
+    "AES_GPRCM\\[%s\\]":
+      description: "AES GPRCM"
+    "AES_INT_EVENT0\\[%s\\]":
+      description: "AES INT EVENT0"
+    "AES_INT_EVENT1\\[%s\\]":
+      description: "AES INT EVENT1"
+    "AES_INT_EVENT2\\[%s\\]":
+      description: "AES INT EVENT2"
+    "AES_INT_EVENT3\\[%s\\]":
+      description: "AES INT EVENT3"

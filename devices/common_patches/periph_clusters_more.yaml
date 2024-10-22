@@ -1,0 +1,32 @@
+TIMG1:
+  _modify:
+    "TIMG1_GPRCM\\[%s\\]":
+      description: "TIMG1 GPRCM"
+    "TIMG1_INT_EVENT\\[%s\\]":
+      description: "TIMG1 INT EVENT"
+    "TIMG1_COMMONREGS\\[%s\\]":
+      description: "TIMG1 COMMONREGS"
+    "TIMG1_COUNTERREGS\\[%s\\]":
+      description: "TIMG1 COUNTERREGS"
+
+TIMG2:
+  _modify:
+    "TIMG2_GPRCM\\[%s\\]":
+      description: "TIMG2 GPRCM"
+    "TIMG2_INT_EVENT\\[%s\\]":
+      description: "TIMG2 INT EVENT"
+    "TIMG2_COMMONREGS\\[%s\\]":
+      description: "TIMG2 COMMONREGS"
+    "TIMG2_COUNTERREGS\\[%s\\]":
+      description: "TIMG2 COUNTERREGS"
+
+TIMG4:
+  _modify:
+    "TIMG4_GPRCM\\[%s\\]":
+      description: "TIMG4 GPRCM"
+    "TIMG4_INT_EVENT\\[%s\\]":
+      description: "TIMG4 INT EVENT"
+    "TIMG4_COMMONREGS\\[%s\\]":
+      description: "TIMG4 COMMONREGS"
+    "TIMG4_COUNTERREGS\\[%s\\]":
+      description: "TIMG4 COUNTERREGS"

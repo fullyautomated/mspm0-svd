@@ -1,0 +1,10 @@
+CANFD0:
+  _modify:
+    "CANFD0_MCAN\\[%s\\]":
+      description: "CANFD0 MCAN"
+    "CANFD0_TI_WRAPPER\\[%s\\]":
+      description: "CANFD0 TI WRAPPER"
+      "CANFD0_PROCESSORS\\[%s\\]":
+        description: "CANFD0 PROCESSORS"
+        "CANFD0_MCANSS_REGS\\[%s\\]":
+          description: "CANFD0 REGS"

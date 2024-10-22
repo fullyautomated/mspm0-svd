@@ -1,0 +1,14 @@
+IOMUX:
+  _modify:
+    "IOMUX_LMGMT_DFT_ATRT\\[%s\\]":
+      description: "IOMUX LMGMT DFT ATRT"
+
+DEBUGSS:
+  _modify:
+    "DEBUGSS_PINCM\\[%s\\]":
+      description: "DEBUGSS PINCM"
+
+SYSCTL:
+  _modify:
+    "SYSCTL_PINCM\\[%s\\]":
+      description: "SYSCTL PINCM"

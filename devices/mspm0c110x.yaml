@@ -5,3 +5,5 @@ _modify:
 
 _include:
   - ../devices/common_patches/vendor_id.yaml
+  - ../devices/common_patches/periph_clusters_c_series.yaml
+  - ../devices/common_patches/cluster_desc_iomux.yaml
