@@ -8,3 +8,4 @@ _include:
   - ../devices/common_patches/periph_clusters.yaml
   - ../devices/common_patches/periph_clusters_more.yaml
   - ../devices/common_patches/cluster_desc_advanced_analog.yaml
+  - ../devices/common_patches/register_keys.yaml

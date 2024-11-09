@@ -7,6 +7,7 @@ _include:
   - ../devices/common_patches/vendor_id.yaml
   - ../devices/common_patches/periph_clusters.yaml
   - ../devices/common_patches/periph_clusters_more.yaml
+  - ../devices/common_patches/register_keys.yaml
 
 FLASH:
   _delete:

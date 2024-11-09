@@ -1,0 +1,21 @@
+"*":
+  _clusters:
+    "?~*GPRCM*":
+      "*_PWREN":
+        _add:
+          KEY:
+            description: "KEY to allow Power State Change"
+            bitOffset: 0x18
+            bitWidth: 0x8
+            access: write-only
+        KEY:
+          KEY: [0x26, "KEY to allow write access to this register"]
+      "*_RSTCTL":
+        _add:
+          KEY:
+            description: "KEY to allow Reset"
+            bitOffset: 0x18
+            bitWidth: 0x8
+            access: write-only
+        KEY:
+          KEY: [0xB1, "KEY to allow write access to this register"]
