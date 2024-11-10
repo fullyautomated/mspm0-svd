@@ -3,7 +3,7 @@ name: build mmaps
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SVDTOOLS: svd
+      SVDTOOLS: svdtools
 
     steps:
       - name: Checkout mspm0-svd
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: mspm0-svd
 
       - name: Checkout mmaps
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: fullyautomated/mspm0-svd-mmaps
           ssh-key: ${{ secrets.MMAPS_KEY }}
@@ -33,7 +33,6 @@ jobs:
       - name: Install tools
         run: |
           ./mspm0-svd/scripts/tool_install.sh svdtools
-          pip install --user svdtools
 
       - name: Build and publish
         run: |

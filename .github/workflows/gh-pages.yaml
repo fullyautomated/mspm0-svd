@@ -2,27 +2,26 @@ name: build gh-pages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build_html:
     name: Build HTML
     runs-on: ubuntu-latest
     env:
-      SVDTOOLS: svd
+      SVDTOOLS: svdtools
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v3
+      - name: Checkout master
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
       - name: Install tools
         run: |
           ./scripts/tool_install.sh svdtools
-          pip install --user svdtools
       - name: Build HTML
         run: make -j2 html
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: html
 
@@ -39,4 +38,4 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
