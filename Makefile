@@ -21,7 +21,7 @@ MMAPS := $(patsubst devices/%.yaml, mmaps/%.mmap, $(YAMLS))
 
 # Turn a devices/device.yaml and svd/device.svd into svd/device.svd.patched
 svd/%.svd.patched: devices/%.yaml svd/%.svd .deps/%.d
-	$(SVDTOOLS) patch $<
+	svdtools patch $<
 	scripts/ti_patch_dimarrayindex.py $@
 
 svd/%.svd.formatted: svd/%.svd.patched
@@ -30,7 +30,7 @@ svd/%.svd.formatted: svd/%.svd.patched
 # Generate mmap from patched SVD
 mmaps/%.mmap: svd/%.svd.patched
 	@mkdir -p mmaps
-	$(SVDTOOLS) mmap $< > $@
+	svdtools mmap $< > $@
 
 patch: $(PATCHED_SVDS)
 
