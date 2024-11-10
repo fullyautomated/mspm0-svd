@@ -33,7 +33,8 @@ jobs:
       - name: Install tools
         run: |
           ./scripts/tool_install.sh svdtools
-          pip install --user svdtools
+          svdtools -V
+          xmllint --version
 
       - name: Patch SVDs
         run: make -j2 patch

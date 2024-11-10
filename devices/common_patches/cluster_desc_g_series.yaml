@@ -27,21 +27,6 @@ SPI1:
     "SPI1_INT_EVENT2\\[%s\\]":
       description: "SPI1 INT EVENT2"
 
-I2C1:
-  _modify:
-    "I2C1_GPRCM\\[%s\\]":
-      description: "I2C1 GPRCM"
-    "I2C1_CPU_INT\\[%s\\]":
-      description: "I2C1 INT EVENT0"
-    "I2C1_DMA_TRIG0\\[%s\\]":
-      description: "I2C1 DMA TRIG0"
-    "I2C1_DMA_TRIG1\\[%s\\]":
-      description: "I2C1 DMA TRIG1"
-    "I2C1_CONTROLLER\\[%s\\]":
-      description: "I2C1 CONTROLLER"
-    "I2C1_TARGET\\[%s\\]":
-      description: "I2C1 TARGET"
-
 RTC:
   _modify:
     "RTC_GPRCM\\[%s\\]":

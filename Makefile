@@ -5,9 +5,6 @@ all: patch
 
 SHELL := /usr/bin/env bash
 
-# Path to `svd`/`svdtools`
-SVDTOOLS ?= svdtools
-
 
 CRATES ?= mspm0l110x mspm0l130x mspm0l134x mspm0g110x mspm0g150x mspm0g310x mspm0g350x mspm0c110x msps003fx
 
@@ -24,7 +21,7 @@ MMAPS := $(patsubst devices/%.yaml, mmaps/%.mmap, $(YAMLS))
 
 # Turn a devices/device.yaml and svd/device.svd into svd/device.svd.patched
 svd/%.svd.patched: devices/%.yaml svd/%.svd .deps/%.d
-	$(SVDTOOLS) patch $<
+	svdtools patch $<
 	scripts/ti_patch_dimarrayindex.py $@
 
 svd/%.svd.formatted: svd/%.svd.patched
@@ -33,7 +30,7 @@ svd/%.svd.formatted: svd/%.svd.patched
 # Generate mmap from patched SVD
 mmaps/%.mmap: svd/%.svd.patched
 	@mkdir -p mmaps
-	$(SVDTOOLS) mmap $< > $@
+	svdtools mmap $< > $@
 
 patch: $(PATCHED_SVDS)
 
@@ -78,6 +75,6 @@ install:
 # Generate dependencies for each device YAML
 .deps/%.d: devices/%.yaml
 	@mkdir -p .deps
-	$(SVDTOOLS) makedeps $< $@
+	svdtools makedeps $< $@
 
 -include .deps/*

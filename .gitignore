@@ -9,3 +9,4 @@ html/
 mmaps/
 /venv
 .devcontainer
+svd/*.patched

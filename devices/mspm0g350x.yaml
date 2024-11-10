@@ -14,3 +14,4 @@ _include:
   - ../devices/common_patches/cluster_desc_mathacl.yaml
   - ../devices/common_patches/cluster_desc_canfd.yaml
   - ../devices/common_patches/register_keys.yaml
+  - ../devices/common_patches/periph_i2c1_desc.yaml

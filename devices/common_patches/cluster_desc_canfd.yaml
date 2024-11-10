@@ -5,6 +5,6 @@ CANFD0:
     "CANFD0_TI_WRAPPER\\[%s\\]":
       description: "CANFD0 TI WRAPPER"
       "CANFD0_PROCESSORS\\[%s\\]":
-        description: "CANFD0 PROCESSORS"
+        description: "CANFD0 PROCESSORS" # fails to apply
         "CANFD0_MCANSS_REGS\\[%s\\]":
-          description: "CANFD0 REGS"
+          description: "CANFD0 REGS" # fails to apply
