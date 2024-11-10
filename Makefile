@@ -5,9 +5,6 @@ all: patch
 
 SHELL := /usr/bin/env bash
 
-# Path to `svd`/`svdtools`
-SVDTOOLS ?= svdtools
-
 
 CRATES ?= mspm0l110x mspm0l130x mspm0l134x mspm0g110x mspm0g150x mspm0g310x mspm0g350x mspm0c110x msps003fx
 
@@ -78,6 +75,6 @@ install:
 # Generate dependencies for each device YAML
 .deps/%.d: devices/%.yaml
 	@mkdir -p .deps
-	$(SVDTOOLS) makedeps $< $@
+	svdtools makedeps $< $@
 
 -include .deps/*
