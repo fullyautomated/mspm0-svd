@@ -3,8 +3,22 @@ CANFD0:
     "CANFD0_MCAN\\[%s\\]":
       description: "CANFD0 MCAN"
     "CANFD0_TI_WRAPPER\\[%s\\]":
-      description: "CANFD0 TI WRAPPER"
-      "CANFD0_PROCESSORS\\[%s\\]":
-        description: "CANFD0 PROCESSORS" # fails to apply
-        "CANFD0_MCANSS_REGS\\[%s\\]":
-          description: "CANFD0 REGS" # fails to apply
+      description: "CANFD0 TI Wrapper"
+  _clusters:
+    "CANFD0_TI_WRAPPER\\[%s\\]":
+      _modify:
+        "CANFD0_PROCESSORS\\[%s\\]":
+          description: "CANFD0 Processors"
+        "CANFD0_MSP\\[%s\\]":
+          description: "CANFD0 MSP"
+      _clusters:
+        "CANFD0_PROCESSORS\\[%s\\]":
+          _modify:
+            "CANFD0_MCANSS_REGS\\[%s\\]":
+              description: "CANFD0 MCANSS Registers"
+            "CANFD0_MCAN_ECC_REGS\\[%s\\]":
+              description: "CANFD0 MCAN ECC Registers"
+        "CANFD0_MSP\\[%s\\]":
+          _modify:
+            "CANFD0_INT_EVENT0\\[%s\\]":
+              description: "CANFD0 INT EVENT0"
