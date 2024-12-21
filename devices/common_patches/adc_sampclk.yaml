@@ -1,0 +1,9 @@
+"ADC?":
+  _clusters:
+    "ADC?_GPRCM*":
+      "ADC?_CLKCFG":
+        SAMPCLK:
+          _replace_enum:
+            ULPCLK: [0, "ULPCLK is the source of the ADC sample clock"]
+            SYSOSC: [1, "SYSOSC is the source of the ADC sample clock"]
+            HFCLK: [2, "HFCLK is the source of the ADC sample clock"]

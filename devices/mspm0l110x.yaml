@@ -8,6 +8,7 @@ _include:
   - ../devices/common_patches/periph_clusters.yaml
   - ../devices/common_patches/periph_clusters_more.yaml
   - ../devices/common_patches/register_keys.yaml
+  - ../devices/common_patches/adc_sampclk.yaml
 
 FLASH:
   _delete:
